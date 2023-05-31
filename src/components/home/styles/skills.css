@@ -1,0 +1,35 @@
+.skills {
+    display: flex;
+    flex-direction: column;    
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+}
+
+.skills h2 span {
+    color: var(--violet);
+}
+
+.skills__grid {
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    background-color: #313030af;
+    width: 85%;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 2rem;
+}
+
+.skills__content {
+    background-color: #313030af;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}

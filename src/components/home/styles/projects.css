@@ -1,0 +1,141 @@
+.content__pojects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;    
+}
+
+#content-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/*? projects title h1 */
+.content__pojects__all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.content__pojects__all h2 {
+    font-size: 2.5rem;
+    align-self: flex-start;
+}
+.content__pojects__all h2 span{
+    color: var(--violet);
+}
+
+/*? projects component */
+.component__content__all {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.component {
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px 5px var(--gray-20);
+}
+
+/*? projects content component*/
+
+.component__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 10px;
+}
+
+.component__content h4 {
+    font-size: 1.2rem;
+    align-self: center;
+}
+
+#tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0 10px;
+}
+
+#react {
+    background-color: #087ea4;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+#javascript {
+    background-color: #F59E0B;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+#redux {
+    background-color: #764abc;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+#css {
+    background-color: #1e7bbf;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+#api {
+    background-color: rgb(238, 0, 0);
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+.component__content__img {
+    padding: 5px 10px;   
+}
+
+.component__content__img img{
+    border-radius: 15px;
+}
+
+.component__content__footer {
+    display: flex;
+    gap: 2rem;
+    padding: 0 10px 10px 10px;
+}
+
+#github, #deploy {
+    color: var(--white);
+}
+
+/*? project img */
+.content__pojects__img {
+        display: none;
+    }   
+
+#mask{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#google {
+    position: absolute;
+    width: 62%;
+    transform: translate(-5%, -13%);
+}
+
+#ellipse {
+    position: absolute;
+    width: 60%;
+    transform: translate(20%, 130%);
+    z-index: -1;
+}
+
+@media screen and (max-width: 935px) {
+    /* .content__pojects__img {
+        display: none;
+    }     */
+}
