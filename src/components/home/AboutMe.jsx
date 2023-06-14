@@ -1,9 +1,12 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import ellipse from '../../../public/svg/ellipse2.svg'
 import astronaut from '../../../public/svg/Image.svg'
 import './styles/about.css'
 
 const AboutMe = () => {
+  const { t } = useTranslation(["about"]);
+
   return (
     <div className='content__aboutMe'>
       <div className='content__aboutMe_imagen'>
@@ -15,10 +18,10 @@ const AboutMe = () => {
       </div>
       <section className='content__aboutMe_information'>
         <h1 className='content__aboutMe_information-title'>
-          <span>Hi!</span> I'm a full stack developer
+          <span>{t('hi')}</span> {t('h1')}
         </h1>
-        <p className='content__aboutMe_information-paragraph'>I'm curious about technology I not only like to program but also that I am passionate about having the problem solving ability by code, ready for the challenges.</p>
-        <a href="#">Download CV</a>
+        <p className='content__aboutMe_information-paragraph'>{t('description')}</p>
+        <a href="#">{t('cv')}</a>
       </section>      
     </div>
   )

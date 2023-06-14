@@ -1,3 +1,6 @@
+import { useState } from 'react'
+import { Suspense } from 'react'
+
 import './App.css'
 import Body from './components/body/Body'
 import Header from './components/header/Header'
@@ -9,16 +12,19 @@ import Skills from './components/home/Skills'
 
 
 function App() {
-
+  const [dark, setDark] = useState(false)
+  
   return (
-    <div className='App'>
-      {/* <Body /> */}
-      <Header />      
-      <AboutMe />
-      <Skills />
-      <Projects />      
-      <ContactMe />
-    </div>
+    <Suspense>
+      <div className='App'>
+        {/* <Body /> */}
+        <Header />      
+        <AboutMe />
+        <Skills />
+        <Projects />      
+        <ContactMe />
+      </div>
+    </Suspense>
   )
 }
 

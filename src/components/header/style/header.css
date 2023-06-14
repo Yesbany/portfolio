@@ -8,6 +8,12 @@
     /* box-shadow: 0px 3px 15px var(--violet); */
 }
 
+.content__header__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .content__header_logo {
     position: relative;
     width: 45px;

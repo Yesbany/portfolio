@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import './styles/skills.css'
 import css from '../../../public/logos/css.png'
 import github from '../../../public/logos/github.png'
@@ -11,9 +12,11 @@ import react from '../../../public/logos/react.png'
 import sqlserver from '../../../public/logos/sqlserver.png'
 
 const Skills = () => {
+  const { t } = useTranslation(["skills"])
+
   return (
     <div className='skills'>
-      <h2>Ski<span>lls</span>...</h2>      
+      <h2>{t('ski')}<span>{t('lls')}</span>...</h2>      
       <div className='skills__grid'>
         <div className='skills__content'>
           <div className='skills__content-img'><img src={react} alt="" /></div>

@@ -64,3 +64,33 @@
     box-shadow: -1px 0px 5px 0px #acaaaa;
     height: 150px;
 }
+
+.form__container__button {
+    align-self: center;
+}
+
+.form__button {
+    border: none;
+    padding: 5px;
+    font-family: 'Sen', sans-serif;
+    color: #000;
+    border-radius: 7px;
+    min-width: 100px;
+    box-shadow: -1px 0px 5px 0px #acaaaa;
+}
+
+/*?? Media Queries */
+@media screen and (min-width: 768px) {
+    .contact {
+        justify-content: center;
+        gap: 4rem;
+    }
+
+    #contact__form {
+        max-width: 600px;
+    }
+}
+@media screen and (min-width: 900px) {
+    
+    
+}
